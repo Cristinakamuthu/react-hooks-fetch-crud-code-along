@@ -51,9 +51,15 @@ function ShoppingList() {
         onCategoryChange={handleCategoryChange}
       />
       <ul className="Items">
-        {itemsToDisplay.map((item) => (
-          <Item key={item.id} item={item} />
-        ))}
+      {itemsToDisplay.map((item) => (
+  <Item
+    key={item.id}
+    item={item}
+    onUpdateItem={handleUpdateItem}
+    onDeleteItem={handleDeleteItem}
+  />
+))}
+
       </ul>
     </div>
   );

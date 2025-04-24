@@ -22,7 +22,7 @@ function ItemForm() {
       .then((newItem) => console.log(newItem));
   }
   return (
-    <form className="NewItem" onSubmit={{handleSubmit}}>
+    <form className="NewItem" onSubmit={handleSubmit}>
       <label>
         Name:
         <input
